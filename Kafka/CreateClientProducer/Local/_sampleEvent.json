@@ -1,0 +1,36 @@
+{
+	"resource" : "/{tenantId}/clients/{clientId}",
+	"path" : "/345/users/345/test",
+	"httpMethod" : "GET",
+	"headers" : null,
+	"queryStringParameters" : null,
+	"pathParameters" : {
+		"tenantId" : "d65a6689-ec94-428f-ba99-f7a9b2e557ed"
+	},
+	"stageVariables" : null,
+	"requestContext" : {
+		"accountId" : "487958234234",
+		"resourceId" : "f3ihnq",
+		"stage" : "test-invoke-stage",
+		"requestId" : "test-invoke-request",
+		"identity" : {
+			"cognitoIdentityPoolId" : null,
+			"accountId" : "487958234234",
+			"cognitoIdentityId" : null,
+			"caller" : "AIDAJPYIUGTQ4FUXPWLOU",
+			"apiKey" : "test-invoke-api-key",
+			"sourceIp" : "test-invoke-source-ip",
+			"accessKey" : "ASIAJJLCYKRE45QQXWKQ",
+			"cognitoAuthenticationType" : null,
+			"cognitoAuthenticationProvider" : null,
+			"userArn" : "arn:aws:iam::487958234234:user/jyoti.gutta",
+			"userAgent" : "Apache-HttpClient/4.5.x (Java/1.8.0_102)",
+			"user" : "AIDAJPYIUGTQ4FUXPWLOU"
+		},
+		"resourcePath" : "/{tenantId}/clients/{clientId}",
+		"httpMethod" : "GET",
+		"apiId" : "h0r4n5fggc"
+	},
+	"body" : "{\r\n\t\t\"id\": \"fb6be508-ffc3-4670-9c84-8ab7f2e0c6a2\",\r\n\t\t\"name\": \"client1\",\r\n\t\t\"type\": \"Individual\",\r\n\t\t\"mobile\": \"022 1243567\",\r\n\t\t\"email\": \"james.letters@reckon.com\"\r\n\t}",
+	"isBase64Encoded" : false
+}

@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@types/uuid": "^3.4.3",
+    "aws-lambda": "^0.1.2",
+    "aws-sdk": "^2.270.1",
+    "node-rdkafka": "^2.3.4",
+    "npm": "^6.1.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.58"
+  }
+}

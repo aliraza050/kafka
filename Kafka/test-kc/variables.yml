@@ -1,0 +1,16 @@
+#Local
+stage:  ${opt:stage, self:provider.stage}
+region: ap-southeast-2
+roleName: acccore-auth-${self:custom.stage}-lambdaRole
+cognitoRole:  acccore-auth-${self:custom.stage}-cognitoRole
+
+#cognito details
+client_id:  m3eh9van6janf9q23vf3pg1dc
+client_id_service: 7k0b3err6jkk82c4imnhiopr7c
+client_secret:  1qmtuvh3og3sdtam7q3h4lqbjh1jc7m797ougvjfkqa556n74661
+cognitoDomainName:  apsusersdev.auth.ap-southeast-2.amazoncognito.com
+userpoolARN: "arn:aws:cognito-idp:ap-southeast-2:756417413405:userpool/ap-southeast-2_II1zmpA0r"
+userpoolid: "ap-southeast-2_II1zmpA0r"
+
+authorisationISS: https://cognito-idp.ap-southeast-2.amazonaws.com/ap-southeast-2_II1zmpA0r
+tokenHeaderName: authorizationtoken

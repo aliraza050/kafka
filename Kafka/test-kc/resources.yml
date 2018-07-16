@@ -1,0 +1,26 @@
+Resources:  
+  LambdaAll:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: ${self:custom.lambdaRole}
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: LambdaAll
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow # note that these rights are given in the default policy and are required if you want logs out of your lambda(s)
+                Resource: arn:aws:logs:${self:custom.region}:*:log-group:/aws/lambda/*:*:*
+                #Resource: arn:aws:logs:ap-southeast-2:*:*"
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+  
